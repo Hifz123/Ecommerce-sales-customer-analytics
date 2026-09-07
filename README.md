@@ -12,66 +12,60 @@ An e-commerce company wants to gain a deeper understanding of its sales performa
 
 The analysis aims to answer the following business questions:
 
-Sales Performance
+ 📈 Sales Performance
+- How are sales and revenue changing over time?
+- Which months generate the highest revenue?
+- What is the average order value?
+- Which product categories contribute the most to revenue?
 
-* How is revenue changing over time?
-* Which months generate the highest sales?
-* What is the average order value?
-* Which product categories generate the most revenue?
+ 📦 Product & Profitability Analysis
+- Which products and categories generate the highest revenue?
+- Which categories have the highest and lowest profit margins?
+- How do discounts impact sales and profitability?
+- Which products are underperforming?
 
-Product Performance
+ 👥 Customer Analysis
+- Who are the most valuable customers?
+- What percentage of customers are repeat customers?
+- How do purchasing patterns vary across customer demographics?
+- Which customer segments generate the highest revenue?
 
-* Which products generate the highest revenue?
-* Which products generate the highest profit?
-* Which products are underperforming?
+ 🌍 Regional Analysis
+- Which regions generate the highest revenue and profit?
+- How does sales performance vary across regions?
+- Which regions present opportunities for business growth?
 
-Customer Analytics
-
-* Who are the most valuable customers?
-* What percentage of customers are repeat customers?
-* How frequently do customers make purchases?
-* Which customer segments generate the most revenue?
-
-Regional Analysis
-
-* Which regions generate the highest revenue?
-* Which regions have the highest number of customers?
-* Where are the potential opportunities for business growth?
-
-🛠️ Tools & Technologies
-
-* PostgreSQL – Database management and SQL analysis
-* Python – Data cleaning and exploratory data analysis
-* Pandas – Data manipulation and cleaning
-* Power BI – Data visualization and dashboard development
-* GitHub – Project documentation and version control
+ 🚚 Delivery & Returns Analysis
+- What is the average delivery time across regions and categories?
+- Which categories have the highest return rates?
+- Is there a relationship between delivery time and product returns?
+- How do returns impact overall business performance?
 
 🔄 Project Workflow
 
 Raw Data → Data Cleaning (Python) → PostgreSQL Database → SQL Analysis → Power BI Dashboard → Business Insights & Recommendations
 
-## 📂 Project Structure
-
-```text
 ecommerce-sales-customer-analytics/
 │
-├── 📁 data/
-│   ├── raw/              # Original dataset
-│   └── cleaned/          # Cleaned dataset
+├── data/
+│   ├── raw/
+│   │   └── ecommerce_sales.csv
+│   └── cleaned/
+│       └── ecommerce_sales_cleaned.csv
 │
-├── 📁 python/
-│   └── data_cleaning.ipynb
+├── python/
+│   └── data_cleaning_eda.ipynb
 │
-├── 📁 sql/
-│   ├── 01_create_tables.sql
+├── sql/
+│   ├── 01_database_schema.sql
 │   └── 02_data_analysis.sql
 │
-├── 📁 powerbi/
-│   └── ecommerce_dashboard.pbix
+├── powerbi/
+│   └── ecommerce_analytics_dashboard.pbix
 │
-├── 📁 images/
+├── images/
 │   ├── dashboard_overview.png
-│   └── er_diagram.png
+│   └── data_model.png
 │
 └── README.md
 
