@@ -1,60 +1,121 @@
-E-Commerce Sales & Customer Analytics
+ E-Commerce Sales & Customer Analytics
 
 📌 Project Overview
 
-This project analyzes e-commerce sales data to uncover insights into sales performance, customer behavior, product performance, and regional trends. The goal is to transform raw transactional data into actionable business insights that can support data-driven decision-making.
+This project analyzes e-commerce sales data to identify insights related to sales performance, customer behavior, product performance, payment preferences, and revenue trends.
+
+The project uses Python for data cleaning and exploratory data analysis and PostgreSQL for structured business analysis using SQL queries.
+
+The goal is to transform raw transactional data into meaningful insights that can support data-driven business decisions.
+
+
 
 🎯 Business Problem
 
-An e-commerce company wants to gain a deeper understanding of its sales performance and customer purchasing behavior. Management needs insights into revenue trends, top-performing products and categories, customer purchasing patterns, and regional performance to identify opportunities for business growth.
+An e-commerce company wants to better understand its sales performance and customer purchasing behavior.
+
+The analysis focuses on identifying key revenue trends, high-performing products and categories, customer purchasing patterns, payment preferences, returns, and regional performance.
+
+
 
 🎯 Project Objectives
 
-The analysis aims to answer the following business questions:
+The project aims to answer the following business questions:
 
- 📈 Sales Performance
-- How are sales and revenue changing over time?
+📈 Sales Performance
+
+- How does revenue change over time?
 - Which months generate the highest revenue?
 - What is the average order value?
-- Which product categories contribute the most to revenue?
+- How does revenue vary across different days of the week?
 
- 📦 Product & Profitability Analysis
-- Which products and categories generate the highest revenue?
-- Which categories have the highest and lowest profit margins?
-- How do discounts impact sales and profitability?
-- Which products are underperforming?
+📦 Product Analysis
 
- 👥 Customer Analysis
-- Who are the most valuable customers?
-- What percentage of customers are repeat customers?
-- How do purchasing patterns vary across customer demographics?
-- Which customer segments generate the highest revenue?
+- Which product categories generate the highest revenue?
+- Which products generate the highest sales?
+- Which categories have the highest profit percentage?
+- Which products have the highest quantity sold?
+- How are categories ranked based on revenue?
 
- 🌍 Regional Analysis
+👥 Customer Analysis
+
+- Who are the top customers based on spending?
+- How many unique customers are present?
+- How does customer spending vary across different age groups?
+
+💳 Payment Analysis
+
+- Which payment methods generate the highest revenue?
+- What is the average order value for each payment method?
+- Which payment methods are most frequently used?
+
+🔄 Returns Analysis
+
+- What percentage of orders are returned?
+- How does revenue differ between returned and non-returned orders?
+
+🌍 Regional Analysis
+
 - Which regions generate the highest revenue and profit?
-- How does sales performance vary across regions?
-- Which regions present opportunities for business growth?
+- How does sales performance vary across different regions?
 
- 🚚 Delivery & Returns Analysis
-- What is the average delivery time across regions and categories?
-- Which categories have the highest return rates?
-- Is there a relationship between delivery time and product returns?
-- How do returns impact overall business performance?
+
+
+🛠️ Tools & Technologies
+
+- **Python**
+  - Pandas
+  - NumPy
+  - Matplotlib
+  - Seaborn
+
+- **PostgreSQL**
+  - Data aggregation
+  - GROUP BY
+  - CASE statements
+  - Common Table Expressions (CTEs)
+  - Window Functions
+  - RANK()
+  - LAG()
+
+- **GitHub**
+- **Jupyter Notebook**
+- **Power BI** *(Dashboard development)*
+
+
 
 🔄 Project Workflow
 
-Raw Data → Data Cleaning (Python) → PostgreSQL Database → SQL Analysis → Power BI Dashboard → Business Insights & Recommendations
+Raw Data  
+↓  
+Data Cleaning & Preprocessing using Python  
+↓  
+Exploratory Data Analysis (EDA)  
+↓  
+PostgreSQL Database  
+↓  
+SQL Business Analysis  
+↓  
+Power BI Dashboard  
+↓  
+Business Insights & Recommendations
 
+
+
+📂 Project Structure
+
+```text
 ecommerce-sales-customer-analytics/
 │
 ├── data/
 │   ├── raw/
 │   │   └── ecommerce_sales.csv
+│   │
 │   └── cleaned/
 │       └── ecommerce_sales_cleaned.csv
 │
 ├── python/
-│   └── data_cleaning_eda.ipynb
+│   └── Ecommerce_Sales_Customer_Analysis.ipynb
 │
 ├── sql/
 │   ├── 01_database_schema.sql
@@ -68,11 +129,3 @@ ecommerce-sales-customer-analytics/
 │   └── data_model.png
 │
 └── README.md
-
-📊 Key Insights
-
-Insights will be added after completing the data analysis.
-
-💡 Business Recommendations
-
-Recommendations will be added based on the findings from the analysis.
