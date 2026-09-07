@@ -50,25 +50,26 @@ Regional Analysis
 
 Raw Data → Data Cleaning (Python) → PostgreSQL Database → SQL Analysis → Power BI Dashboard → Business Insights & Recommendations
 
-📂 Project Structure
+## 📂 Project Structure
 
+```text
 ecommerce-sales-customer-analytics/
 │
-├── data/
-│   ├── raw/
-│   └── cleaned/
+├── 📁 data/
+│   ├── raw/              # Original dataset
+│   └── cleaned/          # Cleaned dataset
 │
-├── python/
+├── 📁 python/
 │   └── data_cleaning.ipynb
 │
-├── sql/
+├── 📁 sql/
 │   ├── 01_create_tables.sql
 │   └── 02_data_analysis.sql
 │
-├── powerbi/
+├── 📁 powerbi/
 │   └── ecommerce_dashboard.pbix
 │
-├── images/
+├── 📁 images/
 │   ├── dashboard_overview.png
 │   └── er_diagram.png
 │
