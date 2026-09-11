@@ -106,11 +106,15 @@ business metrics.
 📂 Project Structure
 
 ecommerce-sales-customer-analytics/
+
 │
 ├── python/
+
 │
 ├── sql/
+
 │
 ├── Dashboard_overview.png
+
 │
 └── README.md
