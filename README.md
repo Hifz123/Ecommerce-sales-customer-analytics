@@ -105,26 +105,12 @@ business metrics.
 
 📂 Project Structure
 
-```text
 ecommerce-sales-customer-analytics/
 │
-├── data/
-│   ├── raw/
-│   └── cleaned/
-│
 ├── python/
-│   └── data_cleaning.ipynb
 │
 ├── sql/
-│   ├── 01_create_tables.sql
-│   ├── 02_data_cleaning.sql
-│   └── 03_data_analysis.sql
 │
-├── powerbi/
-│   └── ecommerce_dashboard.pbix
-│
-├── images/
-│   ├── dashboard_overview.png
-│   └── er_diagram.png
+├── Dashboard_overview.png
 │
 └── README.md
