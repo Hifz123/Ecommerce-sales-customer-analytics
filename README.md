@@ -61,7 +61,7 @@ The interactive dashboard provides analysis of:
 
 Dashboard Preview
 
-[Dashboard Overview](images/dashboard_overview.png)
+![Dashboard Overview](Dashboard_overview.png)
 
 🔍 Key Business Insights
 
